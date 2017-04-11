@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2015. WeNoun™. TANSAN, Since 2014.
+  ~ Code By Jey.
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <LinearLayout style="@style/notice_act_menu_bar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="50dip"
+                android:layout_height="50dip"
+                android:padding="10dip"
+                android:background="@color/colorTr"
+                android:src="@drawable/ic_arrow_back_white_48dp"
+                android:clickable="true"
+                android:onClick="goMain"/>
+
+            <TextView
+                style="@style/notice_act_menu_bar_back_tv"
+                android:id="@+id/notice_title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/notice"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--<ScrollView-->
+        <!--android:id="@+id/notice_sv"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_weight="1"-->
+        <!--android:fillViewport="true">-->
+
+        <fragment
+            android:id="@+id/notice_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:name="com.jey_dev.lib.notice.fragment.Empty"
+            tools:layout="@layout/notice_fragment_empty" />
+    <!--</ScrollView>-->
+    <!--LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="10dip">
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/noti_lv"
+            android:cacheColorHint="@color/tr"
+            android:divider="@color/tansan"
+            android:dividerHeight="1dip"/>
+        </LinearLayout-->
+
+</LinearLayout>

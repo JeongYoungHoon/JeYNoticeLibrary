@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2015. WeNoun™. TANSAN, Since 2014.
+  ~ Code By Jey.
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorWhite">
+
+    <LinearLayout
+        android:id="@+id/noti_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/colorWhite"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dip"
+        android:paddingRight="10dip">
+
+        <TextView
+            android:id="@+id/noti_title_title_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            android:text="Title"/>
+        <TextView
+            android:id="@+id/noti_title_date_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+            android:layout_marginLeft="5dip"
+            android:paddingBottom="10dip"
+            android:textColor="@color/colorGray"
+            android:gravity="bottom"
+            android:textSize="12sp"
+            android:text="15.01.01"/>
+        <ImageView
+            android:id="@+id/noti_title_down_btn"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_weight="0"
+            android:padding="10dip"
+            android:layout_marginLeft="5dip"
+            android:src="@drawable/btn_menu_arr_whiteblack"
+            android:background="@color/colorWhite"/>
+        </LinearLayout>
+    <View
+    android:layout_width="match_parent"
+    android:layout_height="1dip"
+    android:background="#FFD1D1D1"/>
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="vertical"-->
+        <!--android:id="@+id/noti_msg_layout"-->
+        <!--android:visibility="gone">-->
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dip"-->
+            <!--android:background="@color/tr_blue"/>-->
+        <!--<TextView-->
+            <!--android:padding="10dip"-->
+            <!--android:id="@+id/noti_msg_msg_tv"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:textSize="16sp"-->
+            <!--android:textColor="@color/black"-->
+            <!--android:text="msg"/>-->
+        <!--</LinearLayout>-->
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dip"-->
+        <!--android:background="@color/tansan"/>-->
+</LinearLayout>
