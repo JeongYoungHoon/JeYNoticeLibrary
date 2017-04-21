@@ -9,7 +9,7 @@ publish {
     userOrg = 'jeyechoo'
     groupId = 'com.jey_dev'
     artifactId = 'JeYNoticeLibrary'
-    publishVersion = '1.2.1'
+    publishVersion = '1.2.2'
     desc = ''
     website = "https://github.com/JeongYoungHoon/${artifactId}"
     issueTracker = "${website}/issues"
@@ -20,7 +20,7 @@ android {
     compileSdkVersion 25
     buildToolsVersion "25.0.2"
     defaultConfig {
-        minSdkVersion 16
+        minSdkVersion 10
         targetSdkVersion 25
         versionCode 1
         versionName "1.0.0"
@@ -30,6 +30,9 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
+    }
+    lintOptions{
+        abortOnError false
     }
 }
 
