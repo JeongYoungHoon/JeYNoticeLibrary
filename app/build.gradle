@@ -9,7 +9,7 @@ publish {
     userOrg = 'jeyechoo'
     groupId = 'com.jey_dev'
     artifactId = 'JeYNoticeLibrary'
-    publishVersion = '1.2.0'
+    publishVersion = '1.2.1'
     desc = ''
     website = "https://github.com/JeongYoungHoon/${artifactId}"
     issueTracker = "${website}/issues"
